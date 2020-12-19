@@ -1,8 +1,13 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+
   const [name, setName] = useState(0);
+
+  useEffect(() =>{
+    document.title = `you clicked ${name} times`;
+  })
   return (
     <div className="App">
     {name}
