@@ -99,6 +99,7 @@ export default class Quiz extends Component {
          { step <= Object.keys(questions).length ?
          ( 
            <>
+           <h1 className='heading'>Test</h1>
            <Question question={questions[step]}/>
           <Answer answer={answers[step]}
             step={step}
@@ -113,13 +114,13 @@ export default class Quiz extends Component {
           onClick={
             () => {this.nextStep(step)}
           }
-          >Next</button>
+          >Keyingisi</button>
           </>
           ) : (
            <div className='finalPage'>
-            <h1> You have completed the test!</h1>
+            <h1> Test tugadi!</h1>
             <p className='score'>
-              Your score is {score} out of {Object.keys(questions).length}
+              Tog'ri javoblar: {score} / {Object.keys(questions).length}
             </p>
            </div>
            )
