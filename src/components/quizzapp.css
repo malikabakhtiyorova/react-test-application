@@ -1,0 +1,25 @@
+.next {
+  background-color: blueviolet;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.next:hover {
+  background-color:rgb(128, 22, 228);
+}
+
+.next[disabled] {
+  display: none;
+}
+
+.finalPage h1 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: blueviolet;
+}
